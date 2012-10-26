@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class CartsControllerTest < ActionController::TestCase
-  setup do
+  fixtures :all
+
+  def setup
     @cart = carts(:one)
   end
 
