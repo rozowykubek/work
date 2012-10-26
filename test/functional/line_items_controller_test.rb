@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class LineItemsControllerTest < ActionController::TestCase
-  setup do
+  fixtures :all
+  
+  def setup
     @line_item = line_items(:one)
   end
 
